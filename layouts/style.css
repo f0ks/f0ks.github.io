@@ -1,0 +1,89 @@
+html {
+  box-sizing: border-box;
+  	padding: 0;
+	margin: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+p, body {
+    padding: 10px;
+    font-family: Calibri, Arial, Helvetica;
+}
+
+.sidebar {
+    background: #ddb6a5;
+}
+
+.content {
+    background: #ffe6dc;
+}
+
+/* fixed-fluid */
+
+.fixed-fluid .sidebar {
+    width: 200px;
+    float: left;
+}
+
+.fixed-fluid .content {
+    margin-left: 200px;
+}
+
+/* fixed-fluid-seo */
+
+.fixed-fluid-seo .wrapper {
+    position: relative;
+}
+
+.fixed-fluid-seo .sidebar {
+    width: 200px;
+    position: absolute;
+    top: 0;
+
+}
+
+.fixed-fluid-seo .content {
+    margin-left: 200px;
+}
+
+/* fluid-fixed */
+
+.fluid-fixed .sidebar {
+    width: 200px;
+    float: right;
+    margin-left: -200px;
+
+}
+
+.fluid-fixed .content {
+    float: left;
+    margin-right: 200px;
+}
+
+/* fixed-fluid-fixed */
+
+.fixed-fluid-fixed .wrapper {
+    position: relative;
+}
+
+
+.fixed-fluid-fixed .sidebar {
+    width: 200px;
+}
+
+.fixed-fluid-fixed .sidebar.left {
+    position: absolute;
+}
+
+.fixed-fluid-fixed .sidebar.right {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.fixed-fluid-fixed .content {
+    margin: 0 200px;
+}
