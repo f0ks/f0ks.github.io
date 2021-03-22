@@ -3,14 +3,18 @@
 
 <head>
     <script
-      src="https://code.jquery.com/jquery-2.2.4.min.js"
-      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-      crossorigin="anonymous"></script>
+            src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"></script>
     <script src="./jquery-jvectormap-2.0.3.min.js"></script>
     <script src="jquery-jvectormap-world-mill.js"></script>
     <script src="gaugeData.js"></script>
     <script src="script.js"></script>
     <link rel="stylesheet" media="all" href="./jquery-jvectormap-2.0.3.css"/>
+    <meta name="keywords" content="railway, gauge, map by state">
+    <meta name="description"
+          content="This interactive map presents an overview of railway track gauges by size. A gauge is measured between the inner faces of the rails.">
+    <title>List of railway track gauges by countries</title>
 </head>
 
 <style>
@@ -24,7 +28,9 @@
 
 <div style="margin: 0 auto; width: 800px">
 
-    <img src="" width="800px" />
+    <h1>Track gauges map by country</h1>
+
+    <img src="" width="800px"/>
 
     <object id="gaugeSvg" data="gauge.svg" type="image/svg+xml" width="100%">
         Your browser doesn't support SVG
@@ -34,22 +40,29 @@
 
 </div>
 
-
 <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+<script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+        m[i] = m[i] || function () {
+            (m[i].a = m[i].a || []).push(arguments)
+        };
+        m[i].l = 1 * new Date();
+        k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-   ym(51839642, "init", {
-        id:51839642,
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true
-   });
+    ym(51839642, "init", {
+        id: 51839642,
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true
+    });
 </script>
-<noscript><div><img src="https://mc.yandex.ru/watch/51839642" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<noscript>
+    <div><img src="https://mc.yandex.ru/watch/51839642" style="position:absolute; left:-9999px;" alt=""/></div>
+</noscript>
 <!-- /Yandex.Metrika counter -->
+
 
 </body>
 
